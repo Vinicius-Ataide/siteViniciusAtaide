@@ -405,13 +405,14 @@ label{
 }
 
 fieldset{
-    max-width: 250px;
+    max-width: 300px;
     border: medium none !important;
   
 }
 
 fieldset p{
     color:#000000c7;
+
 }
 
 fieldset button{
