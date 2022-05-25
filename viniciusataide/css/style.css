@@ -454,6 +454,13 @@ aside#redesSociais{
 
 aside#redesSociais a{
     text-decoration: none;
+    margin: auto;
+    justify-content: center;
+}
+
+aside#redesSociais h3{
+    color: #000000;
+    font-size:medium;
 }
 
 aside#textoRedesSociais{
@@ -463,13 +470,13 @@ aside#textoRedesSociais{
 }
 
 .boxContato{
+    justify-content: center;
     text-align: center;
     box-shadow: 2px 3px 6px #00000046;
-    margin: 15px 15px;
-    padding:20px 10px 20px 10px;
+    margin: 10px 10px;
     border-radius: 8px;
-    height: 130px;
-    width: 150px;
+    height: 80px;
+    width: 90px;
     background-color: #fff;
 }
 
