@@ -1,0 +1,472 @@
+@charset "UTF-8";
+
+html{
+    
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    justify-content: center;
+}
+
+h1{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+    font-size: 30px;
+    color: #000000;  
+    font-weight: normal;
+}
+
+h2{ 
+    max-width: 600px;
+    text-align: center;
+    font-size: 25px;
+    color: #1b1b1b;
+    font-weight: normal;    
+}
+
+h3{
+    text-align: center;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+p{
+    padding: 5px 10px 5px 10px;
+    color: #157cc8;
+    padding: 15px 10px 10px 15px;
+}
+
+.prop{
+    justify-content: center;
+    color: #fff;
+    font-weight: bold;
+    border-radius:30px;
+    margin: auto;
+    padding: 10px;
+    width: 20%;
+    background-color: #157cc8;
+    flex-wrap: wrap;
+    display: flex;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+main{
+    min-width: 320px;
+    margin: auto;     
+}
+
+section{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+article{
+    max-width: 1200px;
+    margin: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+    
+/* Configuração do Menu*/
+
+
+label[for="bt_menu"]{
+    background-color: #00000038;
+    padding: 5px;
+    text-align: center;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    justify-content: center;
+}
+#bt_menu{
+    display: none;
+}
+label[for="bt_menu"]{
+    display: none;
+}
+
+@media(max-width: 800px){
+    label[for="bt_menu"]{
+        display: block;
+    }
+
+    #bt_menu:checked ~ #menu{
+        margin-top: 0;
+    }
+
+    #menu{
+        margin-top: -150%;
+        transition: all .4s;
+    }
+    #menu ul li{
+        width:100%;
+        float: none;
+    }
+    #menu ul li{
+        position: static;
+        overflow: hidden;
+        max-height: 0;
+        transition: all .4s;
+    }
+    #menu ul li{
+        height: auto;
+        max-height: 200px;
+    }
+
+}
+nav#menu{
+    box-shadow: 0px 2px 3px #00000038;
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 8px 0px 0px 0px;
+    border-radius: 6px;
+}
+
+nav#menu ul{
+    list-style: none;
+}
+
+nav#menu li{
+    padding: 30px 20px 10px 20px;
+    display: inline-block;
+}
+
+nav#menu li:hover{
+    background-color:#0000001e;
+}
+
+nav#menu a:hover{
+    color: #157cc8;
+}
+
+nav#menu a{
+    text-decoration: none;
+    color: #000000 ;
+}
+
+/* Configuração Seção Principal*/
+
+section#principal{
+    background-image: linear-gradient(to bottom, #acacac0e, #acacac2d);
+    padding-bottom: 0px;
+}
+
+aside#listQuali{
+    padding: 10px;
+    text-align: center;
+    display: inline block;    
+}
+
+.listaPrincipal{
+    color: #1b1b1b;
+    font-size: large;
+    list-style: none;
+    font-weight: bold;  
+    text-shadow: none;  
+}
+
+.listaPrincipal::after{
+    content: attr(data-text);
+    animation: fader 4s linear;
+    padding: 8px;
+}
+@keyframes fader{
+    0%{
+        opacity: 0;
+    }
+    40%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 1;
+    }
+    90%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+section#principal h1{
+    text-shadow: 2px 2px 6px #b1b1b1;
+    justify-content: center;
+    font-size: 50px;  
+    color:#1b1b1b;
+}
+
+section#principal h2{
+    color: #157cc8; 
+}
+
+article#idPerfil{
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 0px;   
+}
+
+aside#textoPerfil{
+    max-width: 400px;
+    margin: auto;
+}
+
+/* Configurção Seção de Habilidades */
+
+article#habilidades{
+    flex-wrap: wrap;
+    display:flex;
+    justify-content: center;       
+}
+
+.boxHabilidades{
+    text-align: center;
+    box-shadow: 2px 3px 6px #00000046;
+    margin: 15px 20px;
+    padding:25px 15px 25px 15px;
+    border-radius: 8px;
+    width: 270px;
+}
+
+/* Configuração Seção Formação*/
+
+section#boxFormacao{
+    background-image: linear-gradient(to bottom, #acacac0e, #acacac2d);
+}
+
+article#formacao{
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+}
+
+aside#fotoFormatura{
+    padding: 25px 15px 25px 15px;
+    margin: auto;
+ }
+
+img#formatura{
+    border-radius: 8px;
+    justify-content: center;
+}
+
+aside#textoFormatura{
+    text-align: justify;
+    margin:auto ;
+    max-width: 450px; 
+}
+
+/* Configuração Seção Experiências*/
+
+article#experiencias h2{
+    color: #157cc8;
+}
+
+article#experiencias h3{
+    font-weight: bold;
+    color: #000000c7;
+}
+
+article#experiencias p{
+    color: #000000;
+}
+
+article#experiencias{
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.experiencias{
+    text-align: justify;
+    box-shadow: 2px 3px 6px #00000046;
+    margin: 15px 20px;
+    padding:25px 15px 25px 15px;
+    border-radius: 8px;
+    width: 270px;
+}
+.mais{
+    display: none;
+}
+
+.btnLeiaMais{
+color: #157cc8;
+background-color: #157dc82a;
+border: none;
+padding: 5px;
+border-radius: 5px;
+}
+
+/*Configuração Seção Quem Sou*/
+
+section#boxQuemSou{
+    background-image: linear-gradient(to bottom, #acacac0e, #acacac2d);
+}
+
+article#quemSou{
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+}
+
+aside#textoQuemSou{
+    text-align: justify;
+    margin: auto;
+    max-width: 450px;
+}
+
+aside#fotoQuemSou{
+    padding: 25px 15px 25px 15px;
+    margin: auto;
+}
+
+img#euSou{
+    border-radius: 8px;
+    justify-content: center;
+}
+
+/*Configuração section Contato*/
+
+section#boxContato p{
+    text-align: center;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+}
+
+/*Configuração Formulario de contato*/
+
+article#formContato{
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+}
+
+aside#aContato{
+    margin: auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    min-width: 400px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    box-shadow: 2px 3px 6px #00000046;
+    border-radius: 8px;
+} 
+
+#socialContato a{
+    text-decoration: none;
+}
+
+#aContato input[type="text"],
+#aContato textarea[type="text"]
+{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; ;
+    display: block;
+    border-radius: 5px;
+    max-width: 100%;
+    border: 1px solid #ccc;
+    background: #fff;
+    margin: auto;
+    padding: 10px;
+}
+
+#aContato input[type="text"]:hover,
+#aContato textarea[type="text"]:hover{
+    -webkit-transition: border-color 0.3s ease-in-out;
+    -moz-transition: border-color 0.3s ease-in-out;
+    transition: border-color 0.3s ease-in-out;
+    border: 1px solid #157cc8;
+}
+
+label{
+    padding:10px;
+}
+
+fieldset{
+    text-align: center;
+    justify-content: center;
+    border: medium none !important;
+    margin: auto;    
+}
+fieldset p{
+    color:#000000c7;
+}
+
+fieldset button{
+    margin-top: 30px;
+    padding: 10px;
+    width: 40%;
+    color: #fff;
+    background-color:#157cc8; 
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+fieldset button:hover{
+    background-color: #157dc8c5;
+}
+
+/*Configuração Social Contato */
+
+section#social{
+    background-image: linear-gradient(to bottom, #acacac0e, #acacac2d);
+    text-align: center;
+    
+}
+section#social h2{
+    text-align: center;
+    padding: 25px;
+    max-width: 400px;
+    margin: auto;
+}
+
+article#socialContato{
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+}
+aside#redesSociais{
+    padding: 25px;
+    max-width: 600px;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+}
+
+aside#textoRedesSociais{
+    margin: auto;
+    justify-content: center;
+    max-width: 500px;
+}
+
+.boxContato{
+    text-align: center;
+    box-shadow: 2px 3px 6px #00000046;
+    margin: 15px 15px;
+    padding:20px 10px 20px 10px;
+    border-radius: 8px;
+    height: 130px;
+    width: 150px;
+    background-color: #fff;
+}
+
+.boxContato figcaption{
+    margin: -30px;
+}
+
+
+
+
+
+
+
+
+
+
+
