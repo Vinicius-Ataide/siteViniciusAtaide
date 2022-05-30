@@ -39,8 +39,8 @@ p{
     font-weight: bold;
     border-radius:30px;
     margin: auto;
-    padding: 10px 20px;
-    width: 40%;
+    max-width:200px ;
+    padding: 10px 40px;
     background-color: #157cc8;
     flex-wrap: wrap;
     display: flex;
@@ -224,7 +224,31 @@ aside#textoPerfil{
     margin: auto;
 }
 
+/* Configuração Seção Perfil Profissional*/
+
+section#profissional{
+
+}
+
+article#perfil{
+    margin: auto;
+    flex-wrap: wrap;
+    display:flex;
+    justify-content: center;   
+}
+
+aside#textoPerfProf{
+    text-align: justify;
+    margin:auto ;
+    max-width: 600px; 
+    padding: 20px;
+}
+
 /* Configurção Seção de Habilidades */
+
+section#boxHabilidades{
+    background-image: linear-gradient(to bottom, #acacac0e, #acacac2d);
+}
 
 article#habilidades{
     margin: auto;
@@ -234,6 +258,7 @@ article#habilidades{
 }
 
 .boxHabilidades{
+    background-color: #fff;
     text-align: center;
     box-shadow: 2px 3px 6px #00000046;
     margin: 15px 20px;
@@ -246,7 +271,7 @@ article#habilidades{
 
 section#boxFormacao{
     margin: auto;
-    background-image: linear-gradient(to bottom, #acacac0e, #acacac2d);
+    
 }
 
 article#formacao{
@@ -269,11 +294,14 @@ img#formatura{
 aside#textoFormatura{
     text-align: justify;
     margin:auto ;
-    max-width: 400px; 
+    max-width: 600px; 
+    padding: 20px;
 }
 
 /* Configuração Seção Experiências*/
-
+section#boxExperiencias{
+    background-image: linear-gradient(to bottom, #acacac0e, #acacac2d);
+}
 section#boxExperiencias h2{
     margin: auto;
     text-align: center;
@@ -302,6 +330,7 @@ article#experiencias{
 }
 
 .experiencias{
+    background-color: #fff;
     text-align: justify;
     box-shadow: 2px 3px 6px #00000046;
     margin: 15px 20px;
@@ -336,7 +365,8 @@ article#quemSou{
 aside#textoQuemSou{
     text-align: justify;
     margin: auto;
-    max-width: 400px;
+    max-width: 600px;
+    padding: 20px;
 }
 
 aside#fotoQuemSou{
