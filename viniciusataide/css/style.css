@@ -350,6 +350,45 @@ padding: 5px;
 border-radius: 5px;
 }
 
+/*Configuração Seção Cursos*/
+
+section#boxCursos h2{
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+}
+
+article#cursos h2{
+    color: #157cc8;
+}
+
+article#cursos h3{
+    font-weight: bold;
+    color: #000000c7;
+}
+
+article#cursos p{
+    color: #000000;
+}
+
+article#cursos{
+    margin: auto;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.aprendizado{
+    background-color: #fff;
+    text-align: justify;
+    box-shadow: 2px 3px 6px #00000046;
+    margin: 15px 20px;
+    padding:25px 15px 25px 15px;
+    border-radius: 8px;
+    width: 270px;
+}
+
 /*Configuração Seção Quem Sou*/
 
 section#boxQuemSou{
