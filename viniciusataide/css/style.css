@@ -350,6 +350,45 @@ padding: 5px;
 border-radius: 5px;
 }
 
+/*Configuração Seção Cursos*/
+
+section#boxCursos h2{
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+}
+
+article#cursos h2{
+    color: #157cc8;
+}
+
+article#cursos h3{
+    font-weight: bold;
+    color: #000000c7;
+}
+
+article#cursos p{
+    color: #000000;
+}
+
+article#cursos{
+    margin: auto;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.aprendizado{
+    background-color: #fff;
+    text-align: justify;
+    box-shadow: 2px 3px 6px #00000046;
+    margin: 15px 20px;
+    padding:25px 15px 25px 15px;
+    border-radius: 8px;
+    width: 270px;
+}
+
 /*Configuração Seção Quem Sou*/
 
 section#boxQuemSou{
@@ -396,6 +435,7 @@ article#formContato{
     justify-content: center;
 }
 
+
 aside#aContato{
     margin: auto;
     padding-top: 40px;
@@ -429,20 +469,57 @@ aside#aContato{
     transition: border-color 0.3s ease-in-out;
     border: 1px solid #157cc8;
 }
+.form-control{
+    position: relative;
+}
+
+.form-control i{
+    position: absolute;
+    top: 28px;
+    right: 30px;
+    visibility: hidden;
+}
+
+.form-control small{
+    position: absolute;
+    visibility: hidden;
+}
+
+.form-control.success input{
+    border-color: #2ecc71;
+}
+
+.form-control.error input{
+    border-color: #e74c3c ;
+}
+
+.form-control i.fa-exclamation-circle{
+    color: #e74c3c;
+    visibility: visible;
+}
+
+.form-control i.fa-check-circle{
+    color: #2ecc71;
+    visibility: visible;
+}
+
+.form-control.error small{
+    visibility: visible;
+    color: #e74c3c;
+}
 
 label{
     padding:10px;
+
 }
 
 fieldset{
     max-width: 300px;
     border: medium none !important;
-  
 }
 
 fieldset p{
     color:#000000c7;
-
 }
 
 fieldset button{
@@ -457,6 +534,7 @@ fieldset button{
 }
 
 fieldset button:hover{
+    cursor: pointer;
     background-color: #157dc8c5;
 }
 
