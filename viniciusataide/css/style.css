@@ -81,7 +81,7 @@ article {
 
 
 label[for="bt_menu"] {
-    
+
     background-color: #00000038;
     padding: 5px;
     margin-bottom: 10px;
@@ -520,7 +520,7 @@ input#envia {
 }
 
 fieldset {
-    max-width: 300px;
+    max-width: 350px;
     border: medium none !important;
 }
 
