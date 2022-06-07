@@ -1,3 +1,55 @@
+/*  Função formulário */
+
+var nome = document.getElementById('cNome')
+var assunto = document.getElementById('cAssunto')
+var msg = document.getElementById('cMensagem')
+var alertErro = document.getElementById('alertErro')
+var alertSucesso = document.getElementById('alertSucesso')
+var envia = document.getElementById('envia')
+
+function verificar() {
+    if (nome.value == '') {
+        nome.focus();
+        alertErro.innerHTML = 'Digite seu Nome'
+        alertErro.style.display = 'block'
+        setTimeout(() => {
+            alertErro.style.display = 'none';
+        }, 3000);
+        return false;
+    }
+    if (assunto.value == '') {
+        assunto.focus();
+        alertErro.innerHTML = 'Digite o Assunto'
+        alertErro.style.display = 'block'
+        setTimeout(() => {
+            alertErro.style.display = 'none';
+        }, 3000);
+        return false;
+    }
+    if (msg.value == '') {
+        msg.focus();
+        alertErro.innerHTML = 'Digite Uma Mensagem!'
+        alertErro.style.display = 'block'
+        setTimeout(() => {
+            alertErro.style.display = 'none';
+        }, 3000);
+        return false;
+    }
+    else {
+        envia.click();
+        alertSucesso.style.display = 'block'
+        setTimeout(() => {
+            alertSucesso.style.display = 'none';
+        }, 3000);
+    }
+}
+
+
+
+
+
+/* Função mostrar mais e mostrar menos Section Experiências Proficcionais */
+
 function leiaMaisEc() {
     var pontosEc = document.getElementById('pontosEc')
     var maisTextoEc = document.getElementById('maisEc')

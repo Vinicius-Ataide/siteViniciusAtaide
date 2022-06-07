@@ -1,66 +1,66 @@
 @charset "UTF-8";
 
-html{
-    
+html {
+
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-h1{
-    padding-top: 15px;
-    padding-bottom: 15px;
+h1 {
+    padding: 15px;    
     text-align: center;
     font-size: 30px;
-    color: #000000;  
+    color: #000000;
     font-weight: normal;
 }
 
-h2{ 
+h2 {
     text-align: center;
     font-size: 25px;
     color: #1b1b1b;
-    font-weight: normal;    
+    font-weight: normal;
+    padding: 15px;
 }
 
-h3{
+h3 {
     text-align: center;
     font-size: 18px;
     font-weight: normal;
 }
 
-p{
+p {
     padding: 5px 10px 5px 10px;
     color: #157cc8;
     padding: 15px 10px 10px 15px;
 }
 
-.prop{
+.prop {
     justify-content: center;
     color: #fff;
     font-weight: bold;
-    border-radius:30px;
+    border-radius: 30px;
     margin: auto;
-    max-width:200px ;
+    max-width: 200px;
     padding: 10px 40px;
     background-color: #157cc8;
     flex-wrap: wrap;
     display: flex;
 }
 
-body{
+body {
     overflow-x: hidden;
 }
 
-*{
+* {
     margin: 0px;
     padding: 0px;
 }
 
-main{
+main {
     min-width: 320px;
-    margin: auto;     
+    margin: auto;
 }
 
-section{
+section {
     text-align: center;
     justify-content: center;
     margin: auto;
@@ -68,7 +68,7 @@ section{
     padding-bottom: 20px;
 }
 
-article{
+article {
     text-align: center;
     justify-content: center;
     max-width: 1200px;
@@ -76,11 +76,12 @@ article{
     padding-top: 10px;
     padding-bottom: 10px;
 }
-    
+
 /* Configuração do Menu*/
 
 
-label[for="bt_menu"]{
+label[for="bt_menu"] {
+
     background-color: #00000038;
     padding: 5px;
     margin-bottom: 10px;
@@ -90,44 +91,57 @@ label[for="bt_menu"]{
     height: 40px;
     justify-content: center;
 }
-#bt_menu{
-    display: none;
-}
-label[for="bt_menu"]{
+
+#bt_menu {
+
     display: none;
 }
 
-@media(max-width: 800px){
-    label[for="bt_menu"]{
+label[for="bt_menu"] {
+    display: none;
+
+}
+
+@media(max-width: 800px) {
+    label[for="bt_menu"] {
         display: block;
     }
 
-    #bt_menu:checked ~ #menu{
+    #bt_menu:checked~#menu {
+
         text-align: center;
         margin-top: 0;
     }
 
-    #menu{
+    #menu {
+        position: fixed;
         margin-top: -150%;
         transition: all .4s;
     }
-    #menu ul li{
-        width:100%;
+
+    #menu ul li {
+        width: 100%;
         float: none;
     }
-    #menu ul li{
+
+    #menu ul li {
         position: static;
         overflow: hidden;
         max-height: 0;
         transition: all .4s;
     }
-    #menu ul li{
+
+    #menu ul li {
         height: auto;
         max-height: 200px;
     }
 
 }
-nav#menu{
+
+nav#menu {
+    width: 100%;
+    background-color: white;
+    position: fixed;
     box-shadow: 0px 2px 3px #00000038;
     display: block;
     font-family: Arial, Helvetica, sans-serif;
@@ -135,292 +149,295 @@ nav#menu{
     border-radius: 6px;
 }
 
-nav#menu ul{
+nav#menu ul {
     list-style: none;
 }
 
-nav#menu li{
+nav#menu li {
     padding: 30px 20px 10px 20px;
     display: inline-block;
 }
 
-nav#menu li:hover{
-    background-color:#0000001e;
+nav#menu li:hover {
+    background-color: #0000001e;
 }
 
-nav#menu a:hover{
+nav#menu a:hover {
     color: #157cc8;
 }
 
-nav#menu a{
+nav#menu a {
     text-decoration: none;
-    color: #000000 ;
+    color: #000000;
 }
 
 /* Configuração Seção Principal*/
 
-section#principal{
+section#principal {
     background-image: linear-gradient(to bottom, #acacac0e, #acacac2d);
     padding-bottom: 0px;
 }
 
-aside#listQuali{
+aside#listQuali {
     padding: 10px;
     text-align: center;
-    display: inline block;    
+    display: inline block;
 }
 
-.listaPrincipal{
+.listaPrincipal {
     color: #1b1b1b;
     font-size: large;
     list-style: none;
-    font-weight: bold;  
-    text-shadow: none;  
+    font-weight: bold;
+    text-shadow: none;
 }
 
-.listaPrincipal::after{
+.listaPrincipal::after {
     content: attr(data-text);
     animation: fader 4s linear;
     padding: 8px;
 }
-@keyframes fader{
-    0%{
+
+@keyframes fader {
+    0% {
         opacity: 0;
     }
-    40%{
+
+    40% {
         opacity: 1;
     }
-    50%{
+
+    50% {
         opacity: 1;
     }
-    90%{
+
+    90% {
         opacity: 1;
     }
-    100%{
+
+    100% {
         opacity: 1;
     }
 }
 
-section#principal h1{
+section#principal h1 {
     justify-content: center;
-    font-size: 50px;  
-    color:#1b1b1b;
+    font-size: 50px;
+    color: #1b1b1b;
 }
 
-section#principal h2{
-    color: #157cc8; 
+section#principal h2 {
+    color: #157cc8;
 }
 
-article#idPerfil{
+article#idPerfil {
     flex-wrap: wrap;
     display: flex;
     margin: auto;
     justify-content: center;
-    padding-bottom: 0px;   
+    padding-bottom: 0px;
 }
 
-aside#textoPerfil{
+aside#textoPerfil {
     max-width: 400px;
     margin: auto;
 }
 
 /* Configuração Seção Perfil Profissional*/
 
-section#profissional{
-
-}
-
-article#perfil{
-    margin: auto;
-    flex-wrap: wrap;
-    display:flex;
-    justify-content: center;   
-}
-
-aside#textoPerfProf{
-    text-align: justify;
-    margin:auto ;
-    max-width: 600px; 
-    padding: 20px;
-}
-
-/* Configurção Seção de Habilidades */
-
-section#boxHabilidades{
-    background-image: linear-gradient(to bottom, #acacac0e, #acacac2d);
-}
-
-article#habilidades{
-    margin: auto;
-    flex-wrap: wrap;
-    display:flex;
-    justify-content: center;       
-}
-
-.boxHabilidades{
-    background-color: #fff;
-    text-align: center;
-    box-shadow: 2px 3px 6px #00000046;
-    margin: 15px 20px;
-    padding:25px 15px 25px 15px;
-    border-radius: 8px;
-    width: 270px;
-}
-
-/* Configuração Seção Formação*/
-
-section#boxFormacao{
-    margin: auto;
-    
-}
-
-article#formacao{
+article#perfil {
     margin: auto;
     flex-wrap: wrap;
     display: flex;
     justify-content: center;
 }
 
-aside#fotoFormatura{
-    padding: 25px 15px 25px 15px;
-    margin: auto;
- }
-
-img#formatura{
-    border-radius: 8px;
-    justify-content: center;
-}
-
-aside#textoFormatura{
-    text-align: justify;
-    margin:auto ;
-    max-width: 600px; 
-    padding: 20px;
-}
-
-/* Configuração Seção Experiências*/
-section#boxExperiencias{
-    background-image: linear-gradient(to bottom, #acacac0e, #acacac2d);
-}
-section#boxExperiencias h2{
-    margin: auto;
-    text-align: center;
-    justify-content: center;
-}
-
-article#experiencias h2{
-    color: #157cc8;
-}
-
-article#experiencias h3{
-    font-weight: bold;
-    color: #000000c7;
-}
-
-article#experiencias p{
-    color: #000000;
-}
-
-article#experiencias{
-    margin: auto;
-    flex-wrap: wrap;
-    display: flex;
-    justify-content: center;
-    
-}
-
-.experiencias{
-    background-color: #fff;
-    text-align: justify;
-    box-shadow: 2px 3px 6px #00000046;
-    margin: 15px 20px;
-    padding:25px 15px 25px 15px;
-    border-radius: 8px;
-    width: 270px;
-}
-.mais{
-    display: none;
-}
-
-.btnLeiaMais{
-color: #157cc8;
-background-color: #157dc82a;
-border: none;
-padding: 5px;
-border-radius: 5px;
-}
-
-/*Configuração Seção Cursos*/
-
-section#boxCursos h2{
-    margin: auto;
-    text-align: center;
-    justify-content: center;
-}
-
-article#cursos h2{
-    color: #157cc8;
-}
-
-article#cursos h3{
-    font-weight: bold;
-    color: #000000c7;
-}
-
-article#cursos p{
-    color: #000000;
-}
-
-article#cursos{
-    margin: auto;
-    flex-wrap: wrap;
-    display: flex;
-    justify-content: center;
-    
-}
-
-.aprendizado{
-    background-color: #fff;
-    text-align: justify;
-    box-shadow: 2px 3px 6px #00000046;
-    margin: 15px 20px;
-    padding:25px 15px 25px 15px;
-    border-radius: 8px;
-    width: 270px;
-}
-
-/*Configuração Seção Quem Sou*/
-
-section#boxQuemSou{
-    background-image: linear-gradient(to bottom, #acacac0e, #acacac2d);
-}
-
-article#quemSou{
-    flex-wrap: wrap;
-    display: flex;
-    justify-content: center;
-}
-
-aside#textoQuemSou{
+aside#textoPerfProf {
     text-align: justify;
     margin: auto;
     max-width: 600px;
     padding: 20px;
 }
 
-aside#fotoQuemSou{
+/* Configurção Seção de Habilidades */
+
+section#boxHabilidades {
+    background-image: linear-gradient(to bottom, #acacac0e, #acacac2d);
+}
+
+article#habilidades {
+    margin: auto;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+}
+
+.boxHabilidades {
+    background-color: #fff;
+    text-align: center;
+    box-shadow: 2px 3px 6px #00000046;
+    margin: 15px 20px;
+    padding: 25px 15px 25px 15px;
+    border-radius: 8px;
+    width: 270px;
+}
+
+/* Configuração Seção Formação*/
+
+section#boxFormacao {
+    margin: auto;
+
+}
+
+article#formacao {
+    margin: auto;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+}
+
+aside#fotoFormatura {
     padding: 25px 15px 25px 15px;
     margin: auto;
 }
 
-img#euSou{
+img#formatura {
+    border-radius: 8px;
+    justify-content: center;
+}
+
+aside#textoFormatura {
+    text-align: justify;
+    margin: auto;
+    max-width: 600px;
+    padding: 20px;
+}
+
+/* Configuração Seção Experiências*/
+section#boxExperiencias {
+    background-image: linear-gradient(to bottom, #acacac0e, #acacac2d);
+}
+
+section#boxExperiencias h2 {
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+}
+
+article#experiencias h2 {
+    color: #157cc8;
+}
+
+article#experiencias h3 {
+    font-weight: bold;
+    color: #000000c7;
+}
+
+article#experiencias p {
+    color: #000000;
+}
+
+article#experiencias {
+    margin: auto;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+
+}
+
+.experiencias {
+    background-color: #fff;
+    text-align: justify;
+    box-shadow: 2px 3px 6px #00000046;
+    margin: 15px 20px;
+    padding: 25px 15px 25px 15px;
+    border-radius: 8px;
+    width: 270px;
+}
+
+.mais {
+    display: none;
+}
+
+.btnLeiaMais {
+    color: #157cc8;
+    background-color: #157dc82a;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+/*Configuração Seção Cursos*/
+
+section#boxCursos h2 {
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+}
+
+article#cursos h2 {
+    color: #157cc8;
+}
+
+article#cursos h3 {
+    font-weight: bold;
+    color: #000000c7;
+}
+
+article#cursos p {
+    color: #000000;
+}
+
+article#cursos {
+    margin: auto;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+
+}
+
+.aprendizado {
+    background-color: #fff;
+    text-align: justify;
+    box-shadow: 2px 3px 6px #00000046;
+    margin: 15px 20px;
+    padding: 25px 15px 25px 15px;
+    border-radius: 8px;
+    width: 270px;
+}
+
+/*Configuração Seção Quem Sou*/
+
+section#boxQuemSou {
+    background-image: linear-gradient(to bottom, #acacac0e, #acacac2d);
+}
+
+article#quemSou {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+}
+
+aside#textoQuemSou {
+    text-align: justify;
+    margin: auto;
+    max-width: 600px;
+    padding: 20px;
+}
+
+aside#fotoQuemSou {
+    padding: 25px 15px 25px 15px;
+    margin: auto;
+}
+
+img#euSou {
     border-radius: 8px;
     justify-content: center;
 }
 
 /*Configuração section Contato*/
 
-section#boxContato p{
+section#boxContato p {
     text-align: center;
     flex-wrap: wrap;
     display: flex;
@@ -429,14 +446,14 @@ section#boxContato p{
 
 /*Configuração Formulario de contato*/
 
-article#formContato{
+article#formContato {
     flex-wrap: wrap;
     display: flex;
     justify-content: center;
 }
 
 
-aside#aContato{
+aside#aContato {
     margin: auto;
     padding-top: 40px;
     padding-bottom: 40px;
@@ -444,115 +461,106 @@ aside#aContato{
     margin-bottom: 40px;
     box-shadow: 2px 3px 6px #00000046;
     border-radius: 8px;
-} 
+}
 
-#socialContato a{
+#socialContato a {
     text-decoration: none;
 }
 
+#alertErro {
+    font-weight: bold;
+    text-align: center;
+    color: #ffffff;
+    background-color: #ff5d5d;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 10px;
+    display: none;
+
+}
+
+#alertSucesso {
+    font-weight: bold;
+    text-align: center;
+    color: #ffffff;
+    background-color: #49c098;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 10px;
+    display: none;
+}
+
+#aContato label {
+    text-align: left;
+    padding: 10px;
+    font-size: medium;
+}
+
+input#envia {
+    display: none;
+}
+
 #aContato input[type="text"],
-#aContato textarea[type="text"]
-{
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; 
+#aContato textarea[type="text"] {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     justify-content: center;
     border-radius: 5px;
     border: 1px solid #ccc;
     background: #fff;
     margin: auto;
     padding: 10px;
+    width: 100%;
 }
 
 #aContato input[type="text"]:hover,
-#aContato textarea[type="text"]:hover{
+#aContato textarea[type="text"]:hover {
     -webkit-transition: border-color 0.3s ease-in-out;
     -moz-transition: border-color 0.3s ease-in-out;
     transition: border-color 0.3s ease-in-out;
     border: 1px solid #157cc8;
 }
-.form-control{
-    position: relative;
-}
 
-.form-control i{
-    position: absolute;
-    top: 28px;
-    right: 30px;
-    visibility: hidden;
-}
-
-.form-control small{
-    position: absolute;
-    visibility: hidden;
-}
-
-.form-control.success input{
-    border-color: #2ecc71;
-}
-
-.form-control.error input{
-    border-color: #e74c3c ;
-}
-
-.form-control i.fa-exclamation-circle{
-    color: #e74c3c;
-    visibility: visible;
-}
-
-.form-control i.fa-check-circle{
-    color: #2ecc71;
-    visibility: visible;
-}
-
-.form-control.error small{
-    visibility: visible;
-    color: #e74c3c;
-}
-
-label{
-    padding:10px;
-
-}
-
-fieldset{
-    max-width: 300px;
+fieldset {
+    max-width: 400px;
     border: medium none !important;
 }
 
-fieldset p{
-    color:#000000c7;
+fieldset p {
+    color: #000000c7;
 }
 
-fieldset button{
+fieldset button {
     margin-top: 30px;
     padding: 10px;
     width: 40%;
     color: #fff;
-    background-color:#157cc8; 
+    background-color: #157cc8;
     border: none;
     border-radius: 8px;
     font-weight: bold;
 }
 
-fieldset button:hover{
+fieldset button:hover {
     cursor: pointer;
     background-color: #157dc8c5;
 }
 
 /*Configuração Social Contato */
 
-section#social h2{
+section#social h2 {
     text-align: center;
     padding: 25px;
     max-width: 400px;
     margin: auto;
 }
- aside#aContato p{
+
+aside#aContato p {
     font-size: large;
     max-width: 300px;
     margin: auto;
- }
+}
 
-aside#redesSociais{
+aside#redesSociais {
     padding: 25px;
     max-width: 600px;
     flex-wrap: wrap;
@@ -560,46 +568,40 @@ aside#redesSociais{
     justify-content: center;
 }
 
-aside#redesSociais a{
+aside#redesSociais a {
     color: #000000;
     text-decoration: none;
     margin: auto;
     justify-content: center;
 }
 
-aside#redesSociais h3{
+aside#redesSociais h3 {
     color: #000000;
-    font-size:medium;
+    font-size: medium;
 }
 
-aside#textoRedesSociais{
+aside#textoRedesSociais {
     margin: auto;
     justify-content: center;
     max-width: 500px;
 }
 
-.boxContato{
+.boxContato {
     justify-content: center;
     text-align: center;
     box-shadow: 2px 3px 6px #00000046;
     margin: 10px 10px;
     border-radius: 8px;
-    height: 80px;
-    width: 90px;
+    height: 130px;
+    width: 140px;
     background-color: #fff;
 }
 
-.boxContato figcaption{
+.boxContato figcaption {
     margin: -10px;
 }
 
-
-
-
-
-
-
-
-
-
-
+footer {
+    background-image: linear-gradient(to bottom, #acacac0e, #acacac2d);
+    text-align: center;
+}
