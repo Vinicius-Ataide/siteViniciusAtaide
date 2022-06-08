@@ -1,4 +1,18 @@
-/*  Função formulário */
+/*Configuração menu Mobile*/
+
+function mostraMenu() {
+    var menuMobile = document.querySelector('.mobileMenu')
+    if (menuMobile.classList.contains('open')) {
+        menuMobile.classList.remove('open')
+        document.querySelector('.icon').src = "imagens/menuAbre.png"
+    } else {
+        menuMobile.classList.add('open')
+        document.querySelector('.icon').src = "imagens/menuFecha.png"
+
+    }
+}
+
+/*  Função checa formulário */
 
 var nome = document.getElementById('cNome')
 var assunto = document.getElementById('cAssunto')
@@ -43,10 +57,6 @@ function verificar() {
         }, 3000);
     }
 }
-
-
-
-
 
 /* Função mostrar mais e mostrar menos Section Experiências Proficcionais */
 

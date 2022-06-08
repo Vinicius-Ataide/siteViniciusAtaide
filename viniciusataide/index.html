@@ -12,8 +12,6 @@
 
 <body>
     <header>
-        <input type="checkbox" id="bt_menu">
-        <label for="bt_menu">&#9776;</label>
         <nav id="menu">
             <ul>
                 <li><a href="index.html">Inicio</a></li>
@@ -25,6 +23,22 @@
                 <li><a href="#boxContato">Contato</a></li>
             </ul>
         </nav>
+
+        <div class="mobileMenuIcon">
+            <button onclick="mostraMenu()"><img class="icon" src="imagens/menuAbre.png" alt=""></button>
+        </div>
+
+        <div class="mobileMenu">
+            <ul>
+                <li class="navItem"><a href="index.html">Inicio</a></li>
+                <li class="navItem"><a href="#boxHabilidades">Habilidades</a></li>
+                <li class="navItem"><a href="#boxFormacao">Formação</a></li>
+                <li class="navItem"><a href="#boxExperiencias">Experiências</a></li>
+                <li class="navItem"><a href="#boxCursos">Cursos</a></li>
+                <li class="navItem"><a href="#boxQuemSou">Quem Sou</a></li>
+                <li class="navItem"><a href="#boxContato">Contato</a></li>
+            </ul>
+        </div>
     </header>
     <main>
         <section id="principal">
@@ -131,6 +145,8 @@
             </article>
         </section>
         <section id="boxFormacao">
+            <div class="prop">Formação Acadêmica</div>
+            <h1>Trajetória Acadêmica</h1>
             <article id="formacao">
                 <aside id="fotoFormatura" class="formacao">
                     <picture>
@@ -139,8 +155,6 @@
                     </picture>
                 </aside>
                 <aside id="textoFormatura" class="formacao">
-                    <div class="prop">Formação Acadêmica</div>
-                    <h1>Trajetória Acadêmica</h1>
                     <h2>Bacharel em Sistemas de Informação</h2>
                     <p>Finalizei o Ensino médio em 2009 e em 2011 passei no vestibular da UFT de Araguaína para cursar
                         licenciatura em matemática. Cursei por alguns períodos, mas confesso que não quis continuar por
@@ -215,6 +229,27 @@
                 </aside>
             </article>
         </section>
+        <section id="boxQuemSou">
+            <div class="prop">Quem Sou</div>
+            <h1>Me conheça um pouco melhor</h1>
+            <article id="quemSou">
+                <aside id="textoQuemSou" class="quemSou">
+                    <h2>Quem é Vinicius?</h2>
+                    <p>Me chamo Vinicius Oliveira Ataide, filho da dona Lenir, tenho 29 anos, sou casado com minha
+                        esposa Dheyla e temos 3
+                        filhos juntos. Minha família é meu maior tesouro. Sou simplesmente apaixonado pela área da
+                        tecnologia, estou sempre estudando e buscando novos conhecimentos e gosto muito de aprender
+                        coisas novas. Topo desafios, e quero a cada dia me especializar cada vez mais nas novas
+                        tecnologias.</p>
+                </aside>
+                <aside id="fotoQuemSou">
+                    <picture>
+                        <source media="(max-width: 600px )" srcset="imagens/quemsou380.jpg">
+                        <img id="euSou" src="imagens/quemsou500.jpg" alt="quemSou">
+                    </picture>
+                </aside>
+            </article>
+        </section>
         <section id="boxCursos">
             <div class="prop">Cursos</div>
             <h1>Meu aprendizado mais recente</h1>
@@ -247,27 +282,6 @@
                 </aside>
             </article>
         </section>
-        <section id="boxQuemSou">
-            <article id="quemSou">
-                <aside id="textoQuemSou" class="quemSou">
-                    <div class="prop">Quem Sou</div>
-                    <h1>Me conheça um pouco melhor</h1>
-                    <h2>Quem é Vinicius?</h2>
-                    <p>Me chamo Vinicius Oliveira Ataide, filho da dona Lenir, tenho 29 anos, sou casado com minha
-                        esposa Dheyla e temos 3
-                        filhos juntos. Minha família é meu maior tesouro. Sou simplesmente apaixonado pela área da
-                        tecnologia, estou sempre estudando e buscando novos conhecimentos e gosto muito de aprender
-                        coisas novas. Topo desafios, e quero a cada dia me especializar cada vez mais nas novas
-                        tecnologias.</p>
-                </aside>
-                <aside id="fotoQuemSou">
-                    <picture>
-                        <source media="(max-width: 600px )" srcset="imagens/quemsou380.jpg">
-                        <img id="euSou" src="imagens/quemsou500.jpg" alt="quemSou">
-                    </picture>
-                </aside>
-            </article>
-        </section>
         <section id="boxContato">
             <div class="prop">Contato</div>
             <h1>Fale comigo!</h1>
@@ -276,7 +290,6 @@
                     <h2>Mensagem</h2>
                     <p>Mande uma mensagem para mim, responderei o mais breve possível.</p>
                     <fieldset>
-
                         <form id="form" action="https://api.staticforms.xyz/submit" method="POST">
                             <input type="hidden" name="accessKey" value="e12b5b71-7e47-4d28-8f23-9489321b547d">
                             <input type="hidden" name="redirectTo"
@@ -299,8 +312,6 @@
                             <input id="envia" type="submit">
                         </form>
                         <button name="enviar" onclick="verificar()" type="submit" id="enviar-contato">Enviar</button>
-
-
                     </fieldset>
                     <script src="https://kit.fontawesome.com/f9e19193d6.js" crossorigin="anonymous"></script>
                     <script src="scripts.js"></script>
