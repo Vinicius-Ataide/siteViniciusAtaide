@@ -617,6 +617,7 @@ aside#textoRedesSociais {
 }
 
 footer {
+    box-shadow: 6px 6px 6px 6px #00000046 ;
     background-image: linear-gradient(to bottom, #acacac0e, #acacac2d);
     text-align: center;
 }

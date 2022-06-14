@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="css/style.css">
 
     <title>Vinicius O. Ataide</title>
@@ -147,7 +148,7 @@
         <section id="boxFormacao">
             <div class="prop">Formação Acadêmica</div>
             <h1>Trajetória Acadêmica</h1>
-            <article id="formacao">
+            <article id="formacao" data-aos="fade-left">
                 <aside id="fotoFormatura" class="formacao">
                     <picture>
                         <source media="(max-width: 600px)" srcset="imagens/viniciusFormatura380.jpg">
@@ -232,7 +233,7 @@
         <section id="boxQuemSou">
             <div class="prop">Quem Sou</div>
             <h1>Me conheça um pouco melhor</h1>
-            <article id="quemSou">
+            <article id="quemSou" data-aos="fade-right">
                 <aside id="textoQuemSou" class="quemSou">
                     <h2>Quem é Vinicius?</h2>
                     <p>Me chamo Vinicius Oliveira Ataide, filho da dona Lenir, tenho 29 anos, sou casado com minha
@@ -380,7 +381,12 @@
             </article>
         </section>
     </main>
-
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+          duration: 1000
+      });
+    </script>
 </body>
 
 <footer>
