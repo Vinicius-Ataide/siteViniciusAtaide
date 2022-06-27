@@ -267,6 +267,7 @@ article#perfil {
 }
 
 aside#textoPerfProf {
+    line-height: 2em;
     text-align: justify;
     margin: auto;
     max-width: 600px;
@@ -321,6 +322,7 @@ img#formatura {
 }
 
 aside#textoFormatura {
+    line-height: 2em;
     text-align: justify;
     margin: auto;
     max-width: 600px;
@@ -434,6 +436,7 @@ article#quemSou {
 }
 
 aside#textoQuemSou {
+    line-height: 2em;
     text-align: justify;
     margin: auto;
     max-width: 600px;
