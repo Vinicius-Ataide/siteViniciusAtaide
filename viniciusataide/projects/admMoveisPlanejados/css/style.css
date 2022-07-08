@@ -456,12 +456,12 @@ div.imgProvaSocial:hover{
 }
 
 /* Configuração Seção quem somos*/
-
+section#boxQuemSomos{
+    padding: 20px;
+}
 .dinamicoQuemSomos img{
     border-radius: 20px;
     padding: 5px;
-    margin-left: 20px; 
-    margin-right: 20px;  
 }
 
 .dinamicoQuemSomos{
@@ -498,7 +498,6 @@ div.imgProvaSocial:hover{
     font-size: medium;    
 }
 article.boxQuemSomos{
-    
     background-color: #fff;
     border-radius: 20px;
     box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.658);
