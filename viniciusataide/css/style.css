@@ -70,6 +70,8 @@ section {
 }
 
 article {
+    display: flex;
+    flex-wrap: wrap;
     text-align: center;
     justify-content: center;
     max-width: 1200px;
@@ -270,7 +272,7 @@ aside#textoPerfProf {
     line-height: 2em;
     text-align: justify;
     margin: auto;
-    max-width: 600px;
+    max-width: 1000px;
     padding: 20px;
 }
 
@@ -448,11 +450,55 @@ aside#fotoQuemSou {
     margin: auto;
 }
 
+
 img#euSou {
     border-radius: 8px;
     justify-content: center;
 }
+/* Configuração Seção Projetos*/
+section#boxProjetos{
+    background-image: linear-gradient(to bottom, #acacac0e, #acacac2d);
+}
+article#projetos h2 {
+    color: #157cc8;
+}
 
+article#projetos h3 {
+    font-weight: bold;
+    color: #000000c7;
+}
+
+article#projetos p {
+    color: #000000;
+}
+
+aside.projeto{
+    background-color: #fff;
+    max-width: 350px;
+    box-shadow: 2px 3px 6px #00000046;
+    margin: 15px 20px;
+    padding: 25px 15px 25px 15px;
+    border-radius: 8px;  
+}
+aside.projeto img{
+    padding-top: 10px;
+}
+
+button.btnProjeto{
+    cursor: pointer;
+    margin-top: 30px;
+    padding: 10px;
+    width: 40%;
+    color: #fff;
+    background-color: #157cc8;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+button.btnProjeto:hover{
+    background-color: #157dc8c5;
+}
 /*Configuração section Contato*/
 
 section#boxContato p {
@@ -460,14 +506,18 @@ section#boxContato p {
     flex-wrap: wrap;
     display: flex;
     justify-content: center;
+    
 }
+
 
 /*Configuração Formulario de contato*/
 
 article#formContato {
+    flex-direction: column;
     flex-wrap: wrap;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 
@@ -539,7 +589,7 @@ input#envia {
 }
 
 fieldset {
-    max-width: 400px;
+    width: 100%;
     border: medium none !important;
 }
 
@@ -573,8 +623,10 @@ section#social h2 {
 }
 
 aside#aContato p {
+    align-items: center;
+    justify-content: center;
     font-size: large;
-    max-width: 300px;
+    max-width: 400px;
     margin: auto;
 }
 
@@ -607,11 +659,8 @@ aside#textoRedesSociais {
 .boxContato {
     justify-content: center;
     text-align: center;
-    box-shadow: 2px 3px 6px #00000046;
     margin: 10px 10px;
     border-radius: 8px;
-    height: 130px;
-    width: 140px;
     background-color: #fff;
 }
 
