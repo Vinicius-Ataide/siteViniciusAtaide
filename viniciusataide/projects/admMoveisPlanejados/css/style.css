@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 html {
-    
+
 
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
@@ -10,9 +10,10 @@ html {
     margin: 0px;
     padding: 0px;
 }
-main{
+
+main {
     margin: auto;
-    
+
 }
 
 h1 {
@@ -34,7 +35,7 @@ h2 {
 }
 
 p {
-    font-weight: 600;
+    font-weight: 400;
     font-size: 15pt;
     padding: 5px 10px 5px 10px;
     padding: 15px 10px 10px 15px;
@@ -58,49 +59,52 @@ article {
     justify-content: center;
     max-width: 1300px;
     margin: auto;
-    padding: 10px;
-    
 }
-aside{
+
+aside {
     margin: 10px;
     padding: 10px;
 }
-/* Configuração classe Background*/ 
 
-section.background{
+/* Configuração classe Background*/
+
+section.background {
     background-color: #972e28;
 }
 
-h1.background{
+h1.background {
     color: #fff;
     font-weight: 600;
 }
 
-h2.background{
+h2.background {
     color: #fff;
 }
 
-figcaption.background h1{
+figcaption.background h1 {
     text-align: center;
     color: #fff;
     font-size: 25px;
     font-weight: 600;
 }
-figcaption.background p{
+
+figcaption.background p {
     text-align: center;
-    color: #fff; 
+    color: #fff;
 }
-aside.background{
+
+aside.background {
     text-align: center;
     justify-content: center;
     max-width: 250px;
 }
+
 .background p {
-    color: #fff;   
-    
+    color: #fff;
+
 }
 
-.btnBackground{
+.btnBackground {
     cursor: pointer;
     border-radius: 25px;
     border-style: none;
@@ -109,26 +113,28 @@ aside.background{
     color: #ad1a13;
     margin-top: 30px;
     padding: 15px 80px;
-    background-color:#fff;
+    background-color: #fff;
     box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.658)
 }
+
 /* Configuração Classe Normal*/
-h1.normal{
+h1.normal {
     font-weight: 700;
     padding: 20px;
     margin-bottom: 30px;
 }
-h2.normal{
+
+h2.normal {
     font-weight: 700;
     color: #ad1a13;
 }
- .normal p{
-    font-size: medium;
-    color:#ad1a13;
+
+p.normal  {
+    font-size: 25px;
+    color: #ad1a13;
 }
 
-
-.btnNormal{
+.btnNormal {
     cursor: pointer;
     border-radius: 25px;
     border-style: none;
@@ -137,7 +143,7 @@ h2.normal{
     color: #fff;
     margin-top: 30px;
     padding: 15px 80px;
-    background-color: #ad1a13 ;
+    background-color: #ad1a13;
     box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.658)
 }
 
@@ -255,10 +261,11 @@ nav#menu a {
 
 /* Configuração Seção Apresentação*/
 
-div#container{
+div#container {
     padding: 20px;
 }
-article#apresentacao{
+
+article#apresentacao {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -269,38 +276,40 @@ article#apresentacao{
     background-color: rgb(255, 255, 255);
 }
 
-aside#animApresentacao h3{
+aside#animApresentacao h3 {
     color: #ad1a13;
     font-size: 90px;
     font-weight: 1000;
     font-style: oblique;
 }
-aside#animApresentacao h4{
+
+aside#animApresentacao h4 {
     font-size: 35px;
     color: #000;
 }
-aside#textoApresentacao{
+
+aside#textoApresentacao {
     max-width: 700px;
     height: 350px;
 }
 
-aside#textoApresentacao p{
+aside#textoApresentacao p {
     font-size: 15pt;
 }
 
-aside#textoApresentacao h2{
+aside#textoApresentacao h2 {
     box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.541);
     background-color: rgba(255, 255, 255, 0.61);
     border-radius: 15px;
 }
 
-aside#textoApresentacao p{
+aside#textoApresentacao p {
     box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.541);
     background-color: rgba(255, 255, 255, 0.61);
     border-radius: 15px;
 }
 
-aside#textoApresentacao{
+aside#textoApresentacao {
     margin: 10px auto;
     text-align: center;
     justify-content: center;
@@ -311,7 +320,8 @@ aside#textoApresentacao{
     border-radius: 15px;
     max-width: 700px;
 }
-#listaInicio{
+
+#listaInicio {
     box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.541);
     background-color: rgba(255, 255, 255, 0.61);
     border-radius: 15px;
@@ -320,7 +330,7 @@ aside#textoApresentacao{
     margin: 15px;
 }
 
-.normal ul li{ 
+.normal ul li {
     color: #ad1a13;
     display: inline;
     list-style: circle;
@@ -334,7 +344,7 @@ aside#textoApresentacao{
 }
 
 
-aside#animApresentacao button{
+aside#animApresentacao button {
     background-color: #ad1a13;
     padding: 10px 30px;
     margin: 15px;
@@ -343,21 +353,25 @@ aside#animApresentacao button{
     border-style: none;
     border-radius: 8px;
 }
-aside#animApresentacao{
+
+aside#animApresentacao {
     text-align: left;
-    margin: 20px;  
+    margin: 20px;
 }
-.estatico{
+
+.estatico {
     font-size: 35px;
     font-weight: 500;
 }
-.dinamico{
+
+.dinamico {
     margin: 10px 10px;
     line-height: 50px;
     height: 50px;
     overflow: hidden;
 }
-.dinamico li{
+
+.dinamico li {
     color: #ad1a13;
     text-align: left;
     list-style: none;
@@ -369,72 +383,77 @@ aside#animApresentacao{
     animation: slide 8s steps(4) infinite;
 }
 
-@keyframes slide{
-    100%{
+@keyframes slide {
+    100% {
         top: -200px;
     }
 }
 
-.dinamico li span{
+.dinamico li span {
     position: relative;
 }
 
-.dinamico li span::after{
+.dinamico li span::after {
     padding: 5px;
     content: "";
     position: absolute;
     width: 100%;
     height: 100%;
     left: 0;
-    border-left:2px solid #ad1a13;
+    border-left: 2px solid #ad1a13;
     animation: typing 2s steps(10) infinite;
     background-color: rgb(255, 255, 255);
 }
-.dinamico li span{
+
+.dinamico li span {
     position: relative;
 }
 
-@keyframes typing{
-    100%{
-        left:100%;
+@keyframes typing {
+    100% {
+        left: 100%;
         margin: 0 -35px 0 35px;
     }
 }
+
 /* Configuração Seção Ambientes*/
 
-div#imgAmbientes{
+div#imgAmbientes {
     justify-content: center;
     margin: auto;
     display: flex;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
 }
-div.ambi{
-    
+
+div.ambi {
+
     padding: 20px 7px 20px 7px;
 }
-div.imgComoFazer{ 
+
+div.imgComoFazer {
     margin: auto;
     justify-content: center;
     padding: 30px 10px;
     background-color: #fff;
-    max-width: 150px;
-    border-radius: 200px;
+    max-width: 120px;
+    border-radius: 70px;
 }
 
 /*Configuração Seção Prova Social*/
 
-div.imgPSocial{
+div.imgPSocial {
     display: flex;
     flex-wrap: wrap;
     margin: auto;
     justify-content: center;
 }
-div.imgProvaSocial{
+
+div.imgProvaSocial {
     margin: 10px;
     box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.658);
 }
 
-div.imgProvaSocial:hover{
+div.imgProvaSocial:hover {
     -moz-transform: scale(1.2);
     -webkit-transform: scale(1.2);
     transform: scale(1.2);
@@ -442,21 +461,22 @@ div.imgProvaSocial:hover{
 
 /*Configuração Seção Instagram*/
 
-#instafeed{
+#instafeed {
     margin: 10px;
 }
 
-.boxRedeSocial{
+.boxRedeSocial {
     display: block;
     padding: 20px;
     justify-content: center;
     align-items: center;
 }
-.owl-stage-outer{
+
+.owl-stage-outer {
     box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.658);
 }
 
-#boxLinksRedesSociais{
+#boxLinksRedesSociais {
     align-items: center;
     justify-content: center;
     display: flex;
@@ -464,61 +484,67 @@ div.imgProvaSocial:hover{
 }
 
 /* Configuração Seção quem somos*/
-section#boxQuemSomos{
+section#boxQuemSomos {
     padding: 10px;
 }
-.dinamicoQuemSomos img{
+
+.dinamicoQuemSomos img {
     border-radius: 20px;
     padding: 5px;
 }
 
-.dinamicoQuemSomos{
+.dinamicoQuemSomos {
     justify-content: center;
     align-items: center;
     line-height: 30px;
     height: 390px;
     overflow: hidden;
 }
-.dinamicoQuemSomos li{
+
+.dinamicoQuemSomos li {
     text-align: left;
     list-style: none;
     font-size: 360px;
     left: 0;
     position: relative;
     top: 0;
-    animation: slide1 8s steps(4)  infinite;
+    animation: slide1 8s steps(4) infinite;
 }
 
- @keyframes slide1 {
-    100%{
+@keyframes slide1 {
+    100% {
         top: -1560px;
     }
 }
 
-.dinamicoQuemSomos li span{
+.dinamicoQuemSomos li span {
     position: relative;
 }
 
-.dinamicoQuemSomos figcaption{
+.dinamicoQuemSomos figcaption {
     font-weight: 500;
     color: #ad1a13;
     text-align: center;
-    font-size: medium;    
+    font-size: medium;
 }
-article.boxQuemSomos{
+
+article.boxQuemSomos {
     background-color: #fff;
     border-radius: 20px;
     box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.658);
 }
-.textoQuemSomos{ 
+
+.textoQuemSomos {
     max-width: 600px;
     text-align: justify;
     padding: 15px;
 }
-.textoQuemSomos h2{
+
+.textoQuemSomos h2 {
     color: #ad1a13;
 }
-.textoQuemSomos p{
+
+.textoQuemSomos p {
     color: #ad1a13;
 }
 
@@ -529,8 +555,85 @@ footer {
     border-top-right-radius: 5px;
     box-shadow: 1px 1px 6px #00000046;
 }
-footer p{
+
+
+#boxLocalizacao{
+    justify-content: center;
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    background-color: #972e28;
+}
+#boxLocalizacao iframe{
+    margin: 10px 20px;
+}
+
+#boxLocalizacao a{
+    color: #fff;
+}
+
+#boxLocalizacao a:hover{
+    color: #1b1b1b;
+}
+#textoLocalizacao{
+    margin: 10px 20px;
+    text-align: justify;
+    max-width: 500px;
+    color: #fff;
+}
+#contato{
+    text-align: center;
+    color: #ad1a13;
+}
+.itensContato{
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+}
+.itensContato a{
+    text-align: center;
+    color: #ad1a13;
+    text-decoration: none;
+    
+}
+.itensContato picture{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    margin: 20px;
+}
+
+.itensContato figcaption{
+    text-align: center;
+}
+
+.textoContato{
+    max-width: 600px;
+}
+
+#boxContato{
+    padding: 20px;
+    border-radius: 10px;
+    border-style: solid;
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+}
+.textoContato{
+    margin: auto;
+}
+footer p {
     color: #ad1a13;
     font-size: medium;
     font-weight: 400;
+}
+
+footer a{
+    text-decoration: none;
+    color: #ad1a13;
 }
