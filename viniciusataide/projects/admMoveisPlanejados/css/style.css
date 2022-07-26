@@ -566,8 +566,14 @@ footer {
     margin: auto;
     background-color: #972e28;
 }
-#boxLocalizacao iframe{
-    margin: 10px 20px;
+#iframeLocalizacao{
+   width: 600px;
+   max-height: 300px;
+}
+
+#iframeLocalizacao iframe{
+    width: 100%;
+    height: 100%;
 }
 
 #boxLocalizacao a{
@@ -580,7 +586,7 @@ footer {
 #textoLocalizacao{
     margin: 10px 20px;
     text-align: justify;
-    max-width: 500px;
+    max-width: 400px;
     color: #fff;
 }
 #contato{
