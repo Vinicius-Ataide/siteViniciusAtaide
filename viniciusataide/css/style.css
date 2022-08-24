@@ -299,6 +299,12 @@ article#habilidades {
     width: 270px;
 }
 
+.boxHabilidades:hover{
+    transition: 0.5s;
+    transform: scale(1.1);
+}
+
+
 /* Configuração Seção Formação*/
 
 section#boxFormacao {
@@ -428,6 +434,10 @@ article#cursos {
     border-radius: 8px;
     width: 270px;
 }
+.aprendizado:hover{
+    transition: 0.5s;
+    transform: scale(1.1);
+}
 
 /*Configuração Seção Quem Sou*/
 
@@ -506,6 +516,42 @@ section#boxContato p {
     flex-wrap: wrap;
     display: flex;
     justify-content: center;
+}
+
+
+.float1{
+    transform: translateY(0px);
+    animation: float1 4s ease-in-out infinite;
+}
+
+.float2{
+    transform: translateY(0px);
+    animation: float2 4s ease-in-out infinite;
+}
+
+@keyframes float2{
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(10px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+    
+}
+
+@keyframes float1{
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-10px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
     
 }
 
