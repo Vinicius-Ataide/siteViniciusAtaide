@@ -299,6 +299,7 @@ article#habilidades {
     width: 270px;
 }
 .boxHabilidades:hover{
+    transition: all .5s ease-in-out;
     transform: scale(1.1);
 }
 
@@ -433,6 +434,7 @@ article#cursos {
 }
 
 .aprendizado:hover{
+    transition: all .5s ease-in-out;
     transform:scale(1.1)
 }
 
